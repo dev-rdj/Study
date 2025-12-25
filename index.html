@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Studify</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+  <div class="intro-content">
+    <h1>Studify</h1>
+    <p class="intro-tagline">Understand anything. Clearly.</p>
+
+    <div class="intro-uses">
+      <span>Homework help</span>
+      <span>Concept explanations</span>
+      <span>Exam preparation</span>
+    </div>
+
+    <p class="intro-credit">Powered by Jarvis · Built by Jeff</p>
+  </div>
+</div>
+
+<!-- APP -->
+<div class="app">
+
+  <header class="top-bar">
+    <div class="title">Studify</div>
+    <div class="subtitle">Built by Jeff❤️</div>
+  </header>
+
+  <main class="main">
+    <h2>Explain a topic</h2>
+    <p class="desc">Paste anything you want to understand better.</p>
+
+    <div class="card">
+      <label>What do you want explained?</label>
+      <textarea id="study-input" placeholder="e.g. Photosynthesis, Newton’s laws, a paragraph from my textbook..."></textarea>
+
+      <label>Explanation level</label>
+      <select id="level">
+        <option value="simple">Simple (beginner friendly)</option>
+        <option value="detailed">Detailed</option>
+        <option value="examples">With examples</option>
+      </select>
+
+      <button id="explain-btn">Explain</button>
+    </div>
+
+    <div id="result" class="result hidden"></div>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
